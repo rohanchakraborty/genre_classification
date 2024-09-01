@@ -45,7 +45,7 @@ def go(config: DictConfig):
             parameters={
                 "input_artifact": "raw_data.parquet:latest",
                 "artifact_name":"preprocessed_data.csv",
-                "artifact_type":"preprocessed_data"
+                "artifact_type":"preprocessed_data",
                 "artifact_description":"Data preprocessed in this step",
             }
         )
@@ -72,7 +72,7 @@ def go(config: DictConfig):
                 "artifact_root":"data",
                 "artifact_type":"segregated_data",
                 "test_size":config['data']['test_size'],
-                "stratify":,config['data']['stratify']
+                "stratify":config['data']['stratify'],
             }
         )
 
@@ -90,10 +90,10 @@ def go(config: DictConfig):
             parameters={
                 "train_data":"data_train.csv:latest",
                 "model_config":model_config,
-                "export_artifact":config['random_forest_pipeline']['export_artifact']
-                "random_seed":config['main']['random_seed']
-                "val_size":config['data']['test_size']
-                "stratify":config['data']['stratify']
+                "export_artifact":config['random_forest_pipeline']['export_artifact'],
+                "random_seed":config['main']['random_seed'],
+                "val_size":config['data']['test_size'],
+                "stratify":config['data']['stratify'],
             })
 
     if "evaluate" in steps_to_execute:

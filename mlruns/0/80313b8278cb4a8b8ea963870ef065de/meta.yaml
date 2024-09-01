@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/genre_classification/mlruns/0/80313b8278cb4a8b8ea963870ef065de/artifacts
+end_time: 1725222217585
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 80313b8278cb4a8b8ea963870ef065de
+run_name: caring-flea-883
+run_uuid: 80313b8278cb4a8b8ea963870ef065de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725222216335
+status: 4
+tags: []
+user_id: codespace
