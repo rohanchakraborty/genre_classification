@@ -24,7 +24,7 @@ def go(args):
     # Drop the duplicates
     logger.info("Dropping duplicates")
     df = df.drop_duplicates().reset_index(drop=True)
-
+    df.fillna(df.mode().iloc[0], inplace=True)
     # A minimal feature engineering step: a new feature
     logger.info("Feature engineering")
     df['title'].fillna(value='', inplace=True)

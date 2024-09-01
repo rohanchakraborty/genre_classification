@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/genre_classification/mlruns/0/0c2de3fdc2f24347b181f936b8f2ee6c/artifacts
+end_time: 1725222274133
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0c2de3fdc2f24347b181f936b8f2ee6c
+run_name: skittish-ram-916
+run_uuid: 0c2de3fdc2f24347b181f936b8f2ee6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725222272380
+status: 4
+tags: []
+user_id: codespace
